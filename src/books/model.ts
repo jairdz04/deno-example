@@ -13,9 +13,5 @@ export const format = (item: IBook) => {
 };
 
 export const mapper = (items: Array<IBook>) => {
-  const books = items.map((book) => {
-    return format(book);
-  });
-
-  return books;
+  return items.map(format);
 };
